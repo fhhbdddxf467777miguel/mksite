@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK web site - Votre univers digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <img src="ressources/images/logo.jpg" alt="MK web site">
+            <span>MK WEB SITE</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="products/electronics.html">Électronique</a></li>
+            <li><a href="products/web_services.html">Services Web</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>L'EXCELLENCE NUMÉRIQUE À VOTRE PORTÉE</h1>
+            <p>Appareils high-tech et solutions web sur mesure</p>
+            <div class="cta-buttons">
+                <a href="products/electronics.html" class="btn">Voir l'électronique</a>
+                <a href="products/web_services.html" class="btn btn-outline">Découvrir nos services</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="section-header">
+            <h2>NOS SERVICES EXCLUSIFS</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="icon-circle">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Création de Sites Web</h3>
+                <p>Designs uniques et solutions e-commerce clé en main</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-circle">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Appareils Premium</h3>
+                <p>Smartphones, tablettes et accessoires de dernière génération</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-circle">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Livraison Express</h3>
+                <p>À domicile dans tout le Cameroun sous 48h</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-circle">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3>Paiement Sécurisé</h3>
+                <p>MTN Mobile Money et Orange Money</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produits Phares -->
+    <section class="featured-products">
+        <div class="section-header">
+            <h2>PRODUITS PHARES</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="product-grid">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <img src="ressources/images/sm.jpg" alt="Smartphone XPro">
+                <div class="product-info">
+                    <h3>Smartphone XPro</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(24)</span>
+                    </div>
+                    <p class="price">189,000 FCFA</p>
+                    <button class="btn add-to-cart" data-id="p1" data-type="electronics">
+                        <i class="fas fa-cart-plus"></i> Ajouter
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <img src="ressources/images/la.jpg" alt="UltraBook Pro">
+                <div class="product-info">
+                    <h3>UltraBook Pro</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(18)</span>
+                    </div>
+                    <p class="price">450,000 FCFA</p>
+                    <button class="btn add-to-cart" data-id="p2" data-type="electronics">
+                        <i class="fas fa-cart-plus"></i> Ajouter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>MK WEB SITE</h4>
+                <p>Votre partenaire pour l'excellence numérique au Cameroun depuis 2020</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>LIENS RAPIDES</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products/electronics.html">Électronique</a></li>
+                    <li><a href="products/web_services.html">Services Web</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTACT</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Rue 1.234, Douala, Cameroun</p>
+                <p><i class="fas fa-phone"></i> +237 652170779</p>
+                <p><i class="fas fa-envelope"></i> contact@mkwebsite.cm</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 MK WEB SITE. Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

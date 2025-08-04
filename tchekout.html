@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - MK web site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <img src="ressources/images/logo.png" alt="MK web site">
+            <span>MK WEB SITE</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="products/electronics.html">Électronique</a></li>
+            <li><a href="products/web_services.html">Services Web</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="checkout-hero">
+        <div class="hero-content">
+            <h1>VALIDATION DE COMMANDE</h1>
+            <p>Finalisez votre achat en quelques étapes</p>
+        </div>
+    </section>
+
+    <!-- Processus de commande -->
+    <section class="checkout-process">
+        <div class="container">
+            <div class="process-steps">
+                <div class="step active">
+                    <span>1</span>
+                    <p>Information</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <p>Livraison</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <p>Paiement</p>
+                </div>
+                <div class="step">
+                    <span>4</span>
+                    <p>Confirmation</p>
+                </div>
+            </div>
+            
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <h2>Informations personnelles</h2>
+                    <form id="customer-info">
+                        <div class="form-group">
+                            <label for="name">Nom complet*</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone*</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                        
+                        <h2>Adresse de livraison</h2>
+                        
+                        <div class="form-group">
+                            <label for="address">Adresse*</label>
+                            <input type="text" id="address" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">Ville*</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="region">Région*</label>
+                                <select id="region" required>
+                                    <option value="">Sélectionnez votre région</option>
+                                    <option value="adamaoua">Adamaoua</option>
+                                    <option value="centre">Centre</option>
+                                    <option value="est">Est</option>
+                                    <option value="extreme-nord">Extrême-Nord</option>
+                                    <option value="littoral">Littoral</option>
+                                    <option value="nord">Nord</option>
+                                    <option value="nord-ouest">Nord-Ouest</option>
+                                    <option value="ouest">Ouest</option>
+                                    <option value="sud">Sud</option>
+                                    <option value="sud-ouest">Sud-Ouest</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <a href="cart.html" class="btn btn-outline">
+                                <i class="fas fa-arrow-left"></i> Retour au panier
+                            </a>
+                            <button type="submit" class="btn">
+                                Continuer <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="order-summary">
+                    <div class="summary-card">
+                        <h3>Résumé de la commande</h3>
+                        <div class="cart-items-mini">
+                            <!-- Articles résumés -->
+                        </div>
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Sous-total</span>
+                                <span id="summary-subtotal">0 FCFA</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Livraison</span>
+                                <span id="summary-shipping">0 FCFA</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span id="summary-total">0 FCFA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="support-card">
+                        <i class="fas fa-headset"></i>
+                        <h4>Besoin d'aide?</h4>
+                        <p>Notre équipe est disponible pour vous aider</p>
+                        <p><i class="fas fa-phone"></i> +237 6XX XXX XXX</p>
+                        <p><i class="fas fa-envelope"></i> support@mkwebsite.cm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Même footer que index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
